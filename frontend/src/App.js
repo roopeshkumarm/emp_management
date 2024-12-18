@@ -103,8 +103,10 @@ const EmployeeForm = () => {
           <label className="block text-black text-lg">Department:</label>
           <select className="w-full p-3 border border-gray-300 rounded-md" value={data.department} onChange={(e) => setData({ ...data, department: e.target.value })}>
             <option value="">Select Department</option>
-            <option value="HR">HR</option>
-            <option value="Engineering">Engineering</option>
+            <option value="Developer">Developer</option>
+            <option value="Designer">Designer</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="Engineering">Engineer</option>
             <option value="Marketing">Marketing</option>
           </select>
           {errors.department && <p className="text-red-500 text-sm">{errors.department}</p>}
